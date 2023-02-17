@@ -2,11 +2,12 @@ import React, { useContext, useEffect, useMemo, useState } from 'react';
 import { Button } from '@mantine/core';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import { SocketContext } from '../../Context/SocketContext/SocketContext';
+import { SocketContext } from '../../context/SocketContext/SocketContext';
 import { sortedGameList } from '../../Helpers';
 import { GameDetailsCard } from '../../components';
 
 const Home = () => {
+  
   const navigate = useNavigate();
   const socket = useContext(SocketContext);
   const [games, setGames] = useState([]);

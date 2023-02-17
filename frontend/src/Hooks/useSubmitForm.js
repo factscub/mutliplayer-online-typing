@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
-import { UserContext } from "../Context/User/UserProvider";
+import { UserContext } from "../context/User/UserProvider";
 const useSubmitForm = () => {
 
     const navigate = useNavigate();

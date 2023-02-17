@@ -2,7 +2,7 @@ import { Container } from '@mantine/core';
 import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import { UserContext } from '../../Context/User/UserProvider';
+import { UserContext } from '../../context/User/UserProvider';
 
 const Nav = () => {
     const navigate = useNavigate();

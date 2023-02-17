@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { SocketContext } from '../../Context/SocketContext/SocketContext';
+import { SocketContext } from '../../context/SocketContext/SocketContext';
 import { useSpellChecker, useSetInterval } from '../../Hooks';
 import { Words, Table, Typer } from '../../components'
 

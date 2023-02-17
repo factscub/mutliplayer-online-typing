@@ -2,7 +2,7 @@
 import { Button, TextInput, PasswordInput } from '@mantine/core';
 import { isNotEmpty, useForm } from '@mantine/form';
 import React, { useContext } from 'react';
-import { UserContext } from '../../Context/User/UserProvider';
+import { UserContext } from '../../context/User/UserProvider';
 import { useSubmitForm } from '../../Hooks';
 
 const Login = () => {

@@ -3,7 +3,7 @@ import { Button, TextInput } from '@mantine/core';
 import { isNotEmpty, useForm } from '@mantine/form';
 import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { SocketContext } from '../../Context/SocketContext/SocketContext';
+import { SocketContext } from '../../context/SocketContext/SocketContext';
 import { createCombinedId } from '../../Helpers';
 
 const Invitation = () => {
