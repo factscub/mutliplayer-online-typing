@@ -18,14 +18,14 @@ const useSubmitForm = () => {
         dispatch({ type: 'INVALID_USER', payload: { error: null } });
 
         try {
-            const response = await fetch(`http://localhost:3000/${path}`, {
+            const response = await fetch(`https://multiplayer-online-typing-backend.onrender.com/${path}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(values)
             });
 
             const data = await response.json();
-            console.log(data)
+            // console.log(data)
             dispatch({ type: 'USER_DETAILS', payload: { email: data?.email, username: data?.username } });
 
             // store in localstorage to keep the user logged in after refresh

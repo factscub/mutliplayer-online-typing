@@ -1,4 +1,4 @@
 import { words } from "../Constants/Words";
-export const getWords = words.split(' ').join(' @@').split('@@').slice(0,1)
+export const getWords = words.split(' ').join(' @@').split('@@')
 //  console.log(getWords)
 

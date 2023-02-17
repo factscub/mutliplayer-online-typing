@@ -1,7 +1,7 @@
 import React, { createContext } from "react";
 import io from "socket.io-client";
 
-const socket = io.connect('http://localhost:3000');
+const socket = io.connect('https://multiplayer-online-typing-backend.onrender.com');
 
 export const SocketContext = createContext();
 
